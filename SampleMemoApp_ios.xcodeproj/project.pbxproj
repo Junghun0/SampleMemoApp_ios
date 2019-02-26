@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		340B3CFF221309C3003F6588 /* MemoListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340B3CFE221309C3003F6588 /* MemoListVC.swift */; };
+		340B3D01221309EE003F6588 /* MemoFormVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340B3D00221309EE003F6588 /* MemoFormVC.swift */; };
+		340B3D03221309FF003F6588 /* MemoReadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340B3D02221309FF003F6588 /* MemoReadVC.swift */; };
+		340B3D0522130A5B003F6588 /* MemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340B3D0422130A5B003F6588 /* MemoCell.swift */; };
+		340B3D0722130AD3003F6588 /* MemoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340B3D0622130AD3003F6588 /* MemoData.swift */; };
 		34F4B5402211D88600BFACC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F4B53F2211D88600BFACC6 /* AppDelegate.swift */; };
 		34F4B5452211D88600BFACC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34F4B5432211D88600BFACC6 /* Main.storyboard */; };
 		34F4B5482211D88600BFACC6 /* SampleMemoApp_ios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 34F4B5462211D88600BFACC6 /* SampleMemoApp_ios.xcdatamodeld */; };
@@ -15,6 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		340B3CFE221309C3003F6588 /* MemoListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListVC.swift; sourceTree = "<group>"; };
+		340B3D00221309EE003F6588 /* MemoFormVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoFormVC.swift; sourceTree = "<group>"; };
+		340B3D02221309FF003F6588 /* MemoReadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoReadVC.swift; sourceTree = "<group>"; };
+		340B3D0422130A5B003F6588 /* MemoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoCell.swift; sourceTree = "<group>"; };
+		340B3D0622130AD3003F6588 /* MemoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoData.swift; sourceTree = "<group>"; };
 		34F4B53C2211D88600BFACC6 /* SampleMemoApp_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleMemoApp_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34F4B53F2211D88600BFACC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34F4B5442211D88600BFACC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -60,6 +70,11 @@
 				34F4B54B2211D88800BFACC6 /* LaunchScreen.storyboard */,
 				34F4B54E2211D88800BFACC6 /* Info.plist */,
 				34F4B5462211D88600BFACC6 /* SampleMemoApp_ios.xcdatamodeld */,
+				340B3CFE221309C3003F6588 /* MemoListVC.swift */,
+				340B3D00221309EE003F6588 /* MemoFormVC.swift */,
+				340B3D02221309FF003F6588 /* MemoReadVC.swift */,
+				340B3D0422130A5B003F6588 /* MemoCell.swift */,
+				340B3D0622130AD3003F6588 /* MemoData.swift */,
 			);
 			path = SampleMemoApp_ios;
 			sourceTree = "<group>";
@@ -135,8 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				340B3CFF221309C3003F6588 /* MemoListVC.swift in Sources */,
+				340B3D03221309FF003F6588 /* MemoReadVC.swift in Sources */,
 				34F4B5402211D88600BFACC6 /* AppDelegate.swift in Sources */,
+				340B3D0722130AD3003F6588 /* MemoData.swift in Sources */,
+				340B3D01221309EE003F6588 /* MemoFormVC.swift in Sources */,
 				34F4B5482211D88600BFACC6 /* SampleMemoApp_ios.xcdatamodeld in Sources */,
+				340B3D0522130A5B003F6588 /* MemoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +303,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CD9GCQ8TBY;
 				INFOPLIST_FILE = SampleMemoApp_ios/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,6 +321,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CD9GCQ8TBY;
 				INFOPLIST_FILE = SampleMemoApp_ios/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
