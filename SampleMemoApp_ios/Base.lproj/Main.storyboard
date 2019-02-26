@@ -13,7 +13,7 @@
         <!--Title-->
         <scene sceneID="mwi-dq-gWU">
             <objects>
-                <viewController id="OLY-ES-WlS" customClass="MemoReadVC" customModule="SampleMemoApp_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MemoRead" id="OLY-ES-WlS" customClass="MemoReadVC" customModule="SampleMemoApp_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Pix-Hm-Ydu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -55,6 +55,11 @@
                         <viewLayoutGuide key="safeArea" id="pfc-xI-Tz3"/>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="sih-4e-iCq"/>
+                    <connections>
+                        <outlet property="contents" destination="aVI-WZ-j8M" id="X4p-km-dIb"/>
+                        <outlet property="img" destination="b29-hD-Wk6" id="Gzu-iA-b37"/>
+                        <outlet property="subject" destination="ejS-ze-GYn" id="jpJ-GE-OBR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q7b-kS-cFn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -121,6 +126,11 @@
                                         <constraint firstItem="a2Y-OP-HOh" firstAttribute="top" secondItem="F0l-tF-eyi" secondAttribute="top" constant="10" id="sjq-0n-tWx"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="contents" destination="foJ-Ce-ZNQ" id="aMC-HS-Kqr"/>
+                                    <outlet property="regdate" destination="a2Y-OP-HOh" id="xOY-nG-RSg"/>
+                                    <outlet property="subject" destination="nBz-lT-Zgh" id="lOd-Hl-EeN"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="memoCellWithImage" rowHeight="80" id="5k8-Eb-ZK0" customClass="MemoCell" customModule="SampleMemoApp_ios" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="108" width="375" height="80"/>
@@ -178,6 +188,12 @@
                                         <constraint firstAttribute="bottomMargin" secondItem="HkH-6e-aki" secondAttribute="bottom" constant="10" id="njd-id-KuK"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="contents" destination="f6C-Z3-D3Z" id="fkR-T1-h6k"/>
+                                    <outlet property="img" destination="clK-Lj-3W4" id="DT2-K4-58n"/>
+                                    <outlet property="regdate" destination="HkH-6e-aki" id="9TO-pi-ZiL"/>
+                                    <outlet property="subject" destination="LF6-Sy-Ffg" id="7OC-36-HEu"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
