@@ -10,6 +10,8 @@ import UIKit
 
 class MemoListVC: UITableViewController {
 
+    @IBOutlet var mainTableview: UITableView!
+    
     //앱 델리게이트 객체의 참조 정보를 읽어온다.
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
@@ -54,6 +56,11 @@ class MemoListVC: UITableViewController {
         return cell
     }
     
+    override func setEditing(_ editing: Bool, animated: Bool) {
+        //self.mainTableview.isEditing = true
+        print("setEditing called")
+    }
+    
     override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let delete = UIContextualAction(style: .destructive, title: "Delete") { (action, sourceView, completionHandler) in
             print("index path of delete: \(indexPath)")
@@ -61,6 +68,10 @@ class MemoListVC: UITableViewController {
         }
         
         let rename = UIContextualAction(style: .normal, title: "Edit") { (action, sourceView, completionHandler) in
+            let row = self.appDelegate.memolist[indexPath.row]
+            let cellId = row.image == nil ? "memoCell" : "memoCellWithImage"
+            let cell = tableView.dequeueReusableCell(withIdentifier: cellId) as! MemoCell
+            cell.isEditing = true
             print("index path of edit: \(indexPath)")
             completionHandler(true)
         }
