@@ -52,12 +52,29 @@ class MemoFormVC: UIViewController , UIImagePickerControllerDelegate, UINavigati
     @IBAction func pick(_ sender: Any) {
         //이미지 피커 인스턴스를 생성
         let picker = UIImagePickerController()
-        
+        let cameraPicker = UIImagePickerController()
+    
         picker.delegate = self
         picker.allowsEditing = true
         
+        cameraPicker.delegate = self
+        cameraPicker.allowsEditing = true
+        cameraPicker.sourceType = .camera
+        
+        let alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+        alert.addAction(UIAlertAction(title: "앨범", style: .default, handler: { (UIImagePickerController) in
+            self.present(picker, animated: false, completion: nil)
+        }))
+        alert.addAction(UIAlertAction(title: "카메라", style: .default, handler: { (UIImagePickerController) in
+            self.present(cameraPicker, animated: false, completion:  nil)
+        }))
+        
+        alert.addAction(UIAlertAction(title: "취소", style: .cancel, handler: nil))
+        
         //이미지 피커 화면을 표시
-        self.present(picker, animated: false, completion: nil)
+        self.present(alert, animated: false, completion: nil)
+        
+        
     }
     
     //이미지 피커에서 이미지를 선택했을 때 호출되는 메소드

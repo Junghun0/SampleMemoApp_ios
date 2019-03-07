@@ -45,6 +45,7 @@ class MemoListVC: UITableViewController {
         cell.contents?.text = row.contents
         cell.img?.image = row.image
         
+        
         //5. Date 타입의 날짜를 yyyy-MM-dd HH:mm:ss 포맷에 맞게 변경한다.
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
@@ -54,7 +55,26 @@ class MemoListVC: UITableViewController {
         return cell
     }
     
-    override func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+    //테이블 뷰 셀 클릭 해제될때 불림-> 이전클릭셀데이터 전달함
+   /* override func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        //1. memolist 배열에서 선택된 행에 맞는 데이터를 꺼낸다.
+        let row = self.appDelegate.memolist[indexPath.row]
+    
+        print(indexPath.index(after: indexPath.row))
+        
+        print(indexPath.startIndex)
+        print(row)
+        
+        //2. 상세 화면의 인스턴스를 생성한다.
+        guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "MemoRead") as? MemoReadVC else {
+            return
+        }
+        //3. 값을 전달한 다음, 상세 화면으로 이동한다.
+        vc.param = row
+        self.navigationController?.pushViewController(vc, animated: true)
+    }*/
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //1. memolist 배열에서 선택된 행에 맞는 데이터를 꺼낸다.
         let row = self.appDelegate.memolist[indexPath.row]
         
@@ -62,13 +82,8 @@ class MemoListVC: UITableViewController {
         guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "MemoRead") as? MemoReadVC else {
             return
         }
-        
         //3. 값을 전달한 다음, 상세 화면으로 이동한다.
         vc.param = row
         self.navigationController?.pushViewController(vc, animated: true)
     }
-
-
-
-
 }
