@@ -45,7 +45,6 @@ class MemoListVC: UITableViewController {
         cell.contents?.text = row.contents
         cell.img?.image = row.image
         
-        
         //5. Date 타입의 날짜를 yyyy-MM-dd HH:mm:ss 포맷에 맞게 변경한다.
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
@@ -53,6 +52,38 @@ class MemoListVC: UITableViewController {
         
         //6. cell 객체를 리턴
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let delete = UIContextualAction(style: .destructive, title: "Delete") { (action, sourceView, completionHandler) in
+            print("index path of delete: \(indexPath)")
+            completionHandler(true)
+        }
+        
+        let rename = UIContextualAction(style: .normal, title: "Edit") { (action, sourceView, completionHandler) in
+            print("index path of edit: \(indexPath)")
+            completionHandler(true)
+        }
+        let swipeActionConfig = UISwipeActionsConfiguration(actions: [rename, delete])
+        swipeActionConfig.performsFirstActionWithFullSwipe = false
+        return swipeActionConfig
+    }
+    
+    
+//    override func tableView(_ tableView: UITableView, commit editingStyle:   UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+//        if (editingStyle == .delete) {
+//            var data = self.appDelegate.memolist
+//
+//                data.remove(at: indexPath.row)
+//
+//            tableView.beginUpdates()
+//            tableView.deleteRows(at: [indexPath], with: .none)
+//            tableView.endUpdates()
+//        }
+//    }
+    
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
     }
     
     //테이블 뷰 셀 클릭 해제될때 불림-> 이전클릭셀데이터 전달함
