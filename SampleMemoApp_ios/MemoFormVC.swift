@@ -17,7 +17,11 @@ class MemoFormVC: UIViewController , UIImagePickerControllerDelegate, UINavigati
     override func viewDidLoad() {
         super.viewDidLoad()
         self.contents.delegate = self
-
+        
+        //배경 이미지 설정
+        let bgImage = UIImage(named: "memo-background.png")!
+        self.view.backgroundColor = UIColor(patternImage: bgImage)
+        
     }
     
     //저장 버튼을 클릭했을 때 호출되는 메소드
