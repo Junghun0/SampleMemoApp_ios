@@ -64,6 +64,8 @@ class MemoListVC: UITableViewController {
     override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let delete = UIContextualAction(style: .destructive, title: "Delete") { (action, sourceView, completionHandler) in
             print("index path of delete: \(indexPath)")
+            var data = self.appDelegate.memolist
+            data.remove(at: indexPath.row)
             completionHandler(true)
         }
         
