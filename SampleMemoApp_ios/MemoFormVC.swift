@@ -22,6 +22,11 @@ class MemoFormVC: UIViewController , UIImagePickerControllerDelegate, UINavigati
         let bgImage = UIImage(named: "memo-background.png")!
         self.view.backgroundColor = UIColor(patternImage: bgImage)
         
+        //텍스트 뷰 기본속성
+        self.contents.layer.borderWidth = 0
+        self.contents.layer.borderColor = UIColor.clear.cgColor
+        self.contents.backgroundColor = UIColor.clear
+        
     }
     
     //저장 버튼을 클릭했을 때 호출되는 메소드
