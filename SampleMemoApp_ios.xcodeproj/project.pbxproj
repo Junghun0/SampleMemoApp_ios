@@ -17,6 +17,8 @@
 		34383C9E223A3EF50061E364 /* memo-background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34383C9A223A3EF50061E364 /* memo-background@2x.png */; };
 		34383C9F223A3EF50061E364 /* button-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 34383C9B223A3EF50061E364 /* button-bg.png */; };
 		34383CA0223A3EF50061E364 /* warning-icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34383C9C223A3EF50061E364 /* warning-icon-60@2x.png */; };
+		345E5B1B2240971900F4A725 /* UserInfoKeyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345E5B1A2240971900F4A725 /* UserInfoKeyManager.swift */; };
+		345E5B1D2240A80C00F4A725 /* profile-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 345E5B1C2240A80C00F4A725 /* profile-bg.png */; };
 		349930DD223E2EE700E1653D /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 349930DC223E2EE700E1653D /* SWRevealViewController.m */; };
 		349930DF223E2F3D00E1653D /* sidemenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 349930DE223E2F3D00E1653D /* sidemenu.png */; };
 		349930E6223E2F4900E1653D /* icon02.png in Resources */ = {isa = PBXBuildFile; fileRef = 349930E0223E2F4800E1653D /* icon02.png */; };
@@ -46,6 +48,8 @@
 		34383C9A223A3EF50061E364 /* memo-background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "memo-background@2x.png"; sourceTree = "<group>"; };
 		34383C9B223A3EF50061E364 /* button-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-bg.png"; sourceTree = "<group>"; };
 		34383C9C223A3EF50061E364 /* warning-icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "warning-icon-60@2x.png"; sourceTree = "<group>"; };
+		345E5B1A2240971900F4A725 /* UserInfoKeyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoKeyManager.swift; sourceTree = "<group>"; };
+		345E5B1C2240A80C00F4A725 /* profile-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile-bg.png"; sourceTree = "<group>"; };
 		349930DA223E2EE600E1653D /* SampleMemoApp_ios-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SampleMemoApp_ios-Bridging-Header.h"; sourceTree = "<group>"; };
 		349930DB223E2EE700E1653D /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		349930DC223E2EE700E1653D /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
@@ -82,6 +86,7 @@
 		34383C98223A3E3B0061E364 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				345E5B1C2240A80C00F4A725 /* profile-bg.png */,
 				349930EC223E2F5000E1653D /* account@2x.jpg */,
 				349930E3223E2F4800E1653D /* icon01.png */,
 				349930E0223E2F4800E1653D /* icon02.png */,
@@ -96,6 +101,14 @@
 				34383C9C223A3EF50061E364 /* warning-icon-60@2x.png */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		345E5B192240970600F4A725 /* manager */ = {
+			isa = PBXGroup;
+			children = (
+				345E5B1A2240971900F4A725 /* UserInfoKeyManager.swift */,
+			);
+			path = manager;
 			sourceTree = "<group>";
 		};
 		34F4B5332211D88600BFACC6 = {
@@ -118,6 +131,7 @@
 		34F4B53E2211D88600BFACC6 /* SampleMemoApp_ios */ = {
 			isa = PBXGroup;
 			children = (
+				345E5B192240970600F4A725 /* manager */,
 				349930DB223E2EE700E1653D /* SWRevealViewController.h */,
 				349930DC223E2EE700E1653D /* SWRevealViewController.m */,
 				34F4B53F2211D88600BFACC6 /* AppDelegate.swift */,
@@ -206,6 +220,7 @@
 				349930E7223E2F4900E1653D /* icon04.png in Resources */,
 				349930EB223E2F4900E1653D /* icon06.png in Resources */,
 				349930E6223E2F4900E1653D /* icon02.png in Resources */,
+				345E5B1D2240A80C00F4A725 /* profile-bg.png in Resources */,
 				349930EA223E2F4900E1653D /* icon03.png in Resources */,
 				34383C9D223A3EF50061E364 /* fountainpen@2x.png in Resources */,
 				34383C9F223A3EF50061E364 /* button-bg.png in Resources */,
@@ -227,6 +242,7 @@
 				340B3CFF221309C3003F6588 /* MemoListVC.swift in Sources */,
 				340B3D03221309FF003F6588 /* MemoReadVC.swift in Sources */,
 				34F4B5402211D88600BFACC6 /* AppDelegate.swift in Sources */,
+				345E5B1B2240971900F4A725 /* UserInfoKeyManager.swift in Sources */,
 				340B3D0722130AD3003F6588 /* MemoData.swift in Sources */,
 				349930EF223E37A700E1653D /* SideBarVC.swift in Sources */,
 				349930DD223E2EE700E1653D /* SWRevealViewController.m in Sources */,
