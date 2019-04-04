@@ -3,6 +3,8 @@
 Screenshots
 -----------
 
+##### 처음 메모앱
+
 <div>
 <img width="200" src="https://user-images.githubusercontent.com/30828236/53938482-c6ea8680-40f3-11e9-89b5-305da4e160b9.png">
 <img width="200" src="https://user-images.githubusercontent.com/30828236/53938510-d8cc2980-40f3-11e9-8ecc-f672818618cb.png">
