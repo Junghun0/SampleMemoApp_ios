@@ -12,6 +12,8 @@
 		340B3D03221309FF003F6588 /* MemoReadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340B3D02221309FF003F6588 /* MemoReadVC.swift */; };
 		340B3D0522130A5B003F6588 /* MemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340B3D0422130A5B003F6588 /* MemoCell.swift */; };
 		340B3D0722130AD3003F6588 /* MemoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340B3D0622130AD3003F6588 /* MemoData.swift */; };
+		3417976A22564C63002C7B66 /* Tutorial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3417976922564C63002C7B66 /* Tutorial.storyboard */; };
+		3417976C22564F23002C7B66 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3417976B22564F23002C7B66 /* Utils.swift */; };
 		34383C97223A2D010061E364 /* CSLogButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34383C96223A2D010061E364 /* CSLogButton.swift */; };
 		34383C9D223A3EF50061E364 /* fountainpen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34383C99223A3EF50061E364 /* fountainpen@2x.png */; };
 		34383C9E223A3EF50061E364 /* memo-background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34383C9A223A3EF50061E364 /* memo-background@2x.png */; };
@@ -43,6 +45,8 @@
 		340B3D02221309FF003F6588 /* MemoReadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoReadVC.swift; sourceTree = "<group>"; };
 		340B3D0422130A5B003F6588 /* MemoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoCell.swift; sourceTree = "<group>"; };
 		340B3D0622130AD3003F6588 /* MemoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoData.swift; sourceTree = "<group>"; };
+		3417976922564C63002C7B66 /* Tutorial.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tutorial.storyboard; sourceTree = "<group>"; };
+		3417976B22564F23002C7B66 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		34383C96223A2D010061E364 /* CSLogButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSLogButton.swift; sourceTree = "<group>"; };
 		34383C99223A3EF50061E364 /* fountainpen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fountainpen@2x.png"; sourceTree = "<group>"; };
 		34383C9A223A3EF50061E364 /* memo-background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "memo-background@2x.png"; sourceTree = "<group>"; };
@@ -149,6 +153,8 @@
 				349930DA223E2EE600E1653D /* SampleMemoApp_ios-Bridging-Header.h */,
 				349930EE223E37A700E1653D /* SideBarVC.swift */,
 				349930F0223E3E1100E1653D /* ProfileVC.swift */,
+				3417976922564C63002C7B66 /* Tutorial.storyboard */,
+				3417976B22564F23002C7B66 /* Utils.swift */,
 			);
 			path = SampleMemoApp_ios;
 			sourceTree = "<group>";
@@ -218,6 +224,7 @@
 				349930E8223E2F4900E1653D /* icon05.png in Resources */,
 				34F4B54A2211D88800BFACC6 /* Assets.xcassets in Resources */,
 				349930E7223E2F4900E1653D /* icon04.png in Resources */,
+				3417976A22564C63002C7B66 /* Tutorial.storyboard in Resources */,
 				349930EB223E2F4900E1653D /* icon06.png in Resources */,
 				349930E6223E2F4900E1653D /* icon02.png in Resources */,
 				345E5B1D2240A80C00F4A725 /* profile-bg.png in Resources */,
@@ -243,6 +250,7 @@
 				340B3D03221309FF003F6588 /* MemoReadVC.swift in Sources */,
 				34F4B5402211D88600BFACC6 /* AppDelegate.swift in Sources */,
 				345E5B1B2240971900F4A725 /* UserInfoKeyManager.swift in Sources */,
+				3417976C22564F23002C7B66 /* Utils.swift in Sources */,
 				340B3D0722130AD3003F6588 /* MemoData.swift in Sources */,
 				349930EF223E37A700E1653D /* SideBarVC.swift in Sources */,
 				349930DD223E2EE700E1653D /* SWRevealViewController.m in Sources */,
